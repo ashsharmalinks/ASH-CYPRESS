@@ -1,0 +1,6 @@
+{
+ "env": {
+  "TEST_ENVIRONMENT": "QA",
+  "HOST_ENVIRONMENT": "QA"
+ }
+}
