@@ -10,10 +10,10 @@ export default class AboutUsPage extends BasePage{
 
  public allNaviagtionLinks()
  {
-  const pages = ['/', 'about', 'test']
-  // cy.get("main-nav").children().should('have.attr', 'href')
   cy.get("a").each(page => {
-   cy.request(page.prop('href'))
+   cy.request(page.prop('href')).then((resp)=> {
+    expect(resp.status).to.eq(200)
+   })
   })
  }
 
