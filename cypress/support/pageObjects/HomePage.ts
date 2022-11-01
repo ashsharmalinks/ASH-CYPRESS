@@ -13,4 +13,15 @@ export default class HomePage extends BasePage {
     cy.url().should('contain', 'about-us')
     return this;
   }
+
+  public termAmount()
+  {   
+    return  cy.get('#termAmount')
+  }
+
+  public loanAmount()
+  {   
+    return  cy.get('#loanAmount')
+  }
+
 }
