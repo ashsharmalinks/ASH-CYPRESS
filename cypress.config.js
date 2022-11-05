@@ -30,10 +30,11 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/features/*.feature",
+    specPattern: ["cypress/e2e/features/*.feature","cypress/e2e/*js"],
     chromeWebSecurity: false,
-    env:{
-      baseUrl : "https://livelend.co/"
+    e2e:{
+      baseUrl : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      specPattern: ["cypress/e2e/features/*.feature","cypress/e2e/*js"]
     },
     defaultCommandTimeout: 10000,
 
