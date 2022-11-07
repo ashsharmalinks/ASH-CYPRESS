@@ -5,7 +5,7 @@ const homePage: HomePage = new HomePage()
 
 
 Given("the Livelend homepage is displayed", ()=> {
- cy.visit(Cypress.env('baseUrl'))
+ cy.visit('https://livelend.co/')
  homePage.acceptCookies()
  })
  

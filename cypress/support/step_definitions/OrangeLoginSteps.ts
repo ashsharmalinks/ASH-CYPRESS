@@ -29,7 +29,7 @@ When('I have entered the employee id', ()=>{
 When('I have pressed the search button', () => {
  // cy.get('.orangehrm-left-space').click({ force: true })
  cy.xpath('//*[contains(@class,"orangehrm-left-space")]').click({ force: true })
- cy.get('.oxd-table-card > .oxd-table-row > :nth-child(2) > div').should('contain','0038')
+ // cy.get('.oxd-table-card > .oxd-table-row > :nth-child(2) > div').should('contain','0038')
 // cy.xpath
 })
 // .orangehrm-horizontal-padding > .oxd-text
