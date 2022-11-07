@@ -28,7 +28,7 @@ peipeline{
    steps{
     script {
      sh 'cypress install'
-     sg 'yarn install --production --check-file'
+     sh 'yarn install --production --check-file'
      sh 'yarn run test-execution'
     }
    }
