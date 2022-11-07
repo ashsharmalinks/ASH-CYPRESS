@@ -15,6 +15,3 @@ Feature: Orange login page functionality
     And  I have entered the employee id
     And I have pressed the search button
     Then I should be able see employee details of the employee
-
-# .oxd-table-card > .oxd-table-row > :nth-child(2) > div
-
