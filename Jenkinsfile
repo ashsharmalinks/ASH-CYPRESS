@@ -6,7 +6,7 @@ options {
   ansiColor('xterm')
  }
  stages {
-        stage('Cypress Parallel Test Suite') {
+        stage('Cypress Test Suite') {
                    
                     steps {
                         // git url: 'https://github.com/qauni/cypress-automation-framework.git'
