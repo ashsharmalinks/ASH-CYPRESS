@@ -1,19 +1,8 @@
-// @Library('jenkins-peipeline-helpers@master')_
 
-// properties([
-//  buildDiscarder(
-//   logRotator(artifactDaystoKeepStr: '10', artifactNumtoKeepStr: '10', daystoKeepStr:'', nuymtoKeepStr: '')
-
-//  ),
-//  disableConurrentBuilds()
-// ])
-// update
-// String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
 
 pipeline{
- agent {
-  any 
- }
+ agent any 
+ 
  // tools {nodejs "node"}
 //  triggers {
 //   cron(cron_string)
