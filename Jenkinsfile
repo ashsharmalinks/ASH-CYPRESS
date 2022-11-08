@@ -33,7 +33,7 @@ pipeline{
      bat url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      bat 'npm install'
      bat'npm update'
-     
+     bat 'npm run triggerAllTestshealess'
     }
    }
   }
