@@ -10,7 +10,9 @@ options {
             parallel {
                 stage('Slave Node1') {
                     agent {
-                        any
+                        dockerfile {
+                         filename 'dockerfile'
+                        }
                     }
                     steps {
                         // git url: 'https://github.com/qauni/cypress-automation-framework.git'
