@@ -33,12 +33,15 @@ pipeline{
    }
    steps{
     script {
-     bat 'npm cypress install'
+      sh 'cypress install'
+      sh 'yarn install --production --check-files'
+      sh 'npx cypress run'
+     // bat 'npm cypress install'
      // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      // bat 'docker run -it --entrypoint=cypress/included:10.10.0 info'
      // bat 'docker build -t cypress .'
-     bat'npm update'
-     bat 'npm run triggerAllTestshealess'
+     // bat'npm update'
+     // bat 'npm run triggerAllTestshealess'
     }
    }
   }
