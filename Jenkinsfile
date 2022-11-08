@@ -20,12 +20,12 @@ pipeline{
  }
  stages {
   stage('execute test against the envronment') {
-   agent {
-    dockerfile {
-     filename 'Dockerfile'
-     echo 'install Docker file'
-    }
-   }
+   // agent {
+   //  dockerfile {
+   //   filename 'Dockerfile'
+   //   echo 'install Docker file'
+   //  }
+   // }
    steps{
     script {
      sh 'cypress install'
