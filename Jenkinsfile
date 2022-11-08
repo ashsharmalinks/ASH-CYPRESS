@@ -1,6 +1,3 @@
-import jenkins.model.*
-jenkins = Jenkins.instance
-
 // @Library('jenkins-peipeline-helpers@master')_
 
 // properties([
