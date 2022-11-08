@@ -10,7 +10,7 @@
 
 // String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
 
-peipeline{
+pipeline{
 //  agent any
 //  triggers {
 //   cron(cron_string)
