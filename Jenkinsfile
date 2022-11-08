@@ -31,6 +31,7 @@ pipeline{
     script {
      // bat 'npm cypress install'
      bat 'npm install'
+     bat'npm audit fix --force'
      sh 'yarn install --production --check-file'
      sh 'yarn run test-execution'
     }
