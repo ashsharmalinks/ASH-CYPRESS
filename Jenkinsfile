@@ -30,10 +30,10 @@ pipeline{
    steps{
     script {
      // bat 'npm cypress install'
+     bat url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      bat 'npm install'
-     bat'npm audit fix --force'
-     sh 'yarn install --production --check-file'
-     sh 'yarn run test-execution'
+     bat'npm update'
+     
     }
    }
   }
