@@ -7,13 +7,7 @@ options {
  }
  stages {
         stage('Cypress Parallel Test Suite') {
-            parallel {
-                stage('Slave Node1') {
-                    agent {
-                        dockerfile {
-                         filename 'dockerfile'
-                        }
-                    }
+                   
                     steps {
                         // git url: 'https://github.com/qauni/cypress-automation-framework.git'
                         bat 'npm install'
@@ -23,5 +17,4 @@ options {
                 }
             }
         }
-    }
-}
+  
