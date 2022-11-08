@@ -11,7 +11,9 @@
 // String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
 
 pipeline{
- agent any
+ agent any{
+  filename 'Dockerfile'
+ }
  // tools {nodejs "node"}
 //  triggers {
 //   cron(cron_string)
