@@ -7,7 +7,7 @@
 //  ),
 //  disableConurrentBuilds()
 // ])
-
+// update
 // String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
 
 pipeline{
