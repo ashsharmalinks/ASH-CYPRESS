@@ -33,7 +33,7 @@ pipeline{
    }
    steps{
     script {
-     // bat 'npm cypress install'
+     bat 'npm cypress install'
      // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      // bat 'docker run -it --entrypoint=cypress/included:10.10.0 info'
      // bat 'docker build -t cypress .'
