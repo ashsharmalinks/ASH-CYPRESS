@@ -1,16 +1,16 @@
 // @Library('jenkins-peipeline-helpers@master')_
 
-properties([
- buildDiscarder(
-  logRotator(artifactDaystoKeepStr: '10', artifactNumtoKeepStr: '10', daystoKeepStr:'', nuymtoKeepStr: '')
+// properties([
+//  buildDiscarder(
+//   logRotator(artifactDaystoKeepStr: '10', artifactNumtoKeepStr: '10', daystoKeepStr:'', nuymtoKeepStr: '')
 
- ),
- // disableConurrentBuilds()
-])
+//  ),
+//  disableConurrentBuilds()
+// ])
 
 // String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
 
-// peipeline{
+peipeline{
 //  agent any
 //  triggers {
 //   cron(cron_string)
@@ -23,6 +23,7 @@ properties([
    agent {
     dockerfile {
      filename 'Dockerfile'
+     echo 'install Docker file'
     }
    }
    steps{
@@ -34,4 +35,4 @@ properties([
    }
   }
  }
-// }
+}
