@@ -22,7 +22,7 @@ pipeline{
  stages {
   stage('execute test against the envronment') {
    agent {
-    dockerfile {
+    any {
      filename 'Dockerfile'
      echo 'install Docker file'
     }
