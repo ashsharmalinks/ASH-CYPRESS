@@ -30,7 +30,7 @@ pipeline{
    steps{
     script {
      // bat 'npm cypress install'
-     git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
+     // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      bat 'npm install'
      bat'npm update'
      bat 'npm run triggerAllTestshealess'
