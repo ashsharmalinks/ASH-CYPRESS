@@ -37,9 +37,9 @@ pipeline{
      // bat 'npm cypress install'
      // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      // bat 'docker run -it --entrypoint=cypress/included:10.10.0 info'
-     bat 'npm install'
-     bat'npm update'
-     bat 'npm run triggerAllTestshealess'
+     bat 'docker build -t cypress .'
+     // bat'npm update'
+     // bat 'npm run triggerAllTestshealess'
     }
    }
   }
