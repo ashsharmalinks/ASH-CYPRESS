@@ -29,7 +29,6 @@ pipeline{
    agent {
     dockerfile {
      filename 'dockerfile'
-     echo 'install Docker file'
     }
    }
    steps{
