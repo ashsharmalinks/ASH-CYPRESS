@@ -12,9 +12,7 @@
 
 pipeline{
  agent {
-  any {
-  filename 'Dockerfile'
- }
+  any 
  }
  // tools {nodejs "node"}
 //  triggers {
@@ -27,21 +25,20 @@ pipeline{
  stages {
   stage('execute test against the envronment') {
    agent {
-    dockerfile {
-     filename 'dockerfile'
+    any
     }
    }
    steps{
     script {
-      sh 'cypress install'
-      sh 'yarn install --production --check-files'
-      sh 'npx cypress run'
-     // bat 'npm cypress install'
+      // sh 'cypress install'
+      // sh 'yarn install --production --check-files'
+      // sh 'npx cypress run'
+     bat 'npm cypress install'
      // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      // bat 'docker run -it --entrypoint=cypress/included:10.10.0 info'
      // bat 'docker build -t cypress .'
-     // bat'npm update'
-     // bat 'npm run triggerAllTestshealess'
+     bat'npm update'
+     bat 'npm run triggerAllTestshealess'
     }
    }
   }
