@@ -12,6 +12,7 @@
 
 pipeline{
  agent any
+ tools {nodejs, "node"}
 //  triggers {
 //   cron(cron_string)
 //  }
@@ -28,7 +29,8 @@ pipeline{
    // }
    steps{
     script {
-     sh 'cypress install'
+     bat 'npm cypress install'
+     bat 'npm install '
      sh 'yarn install --production --check-file'
      sh 'yarn run test-execution'
     }
