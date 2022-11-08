@@ -5,7 +5,7 @@ properties([
   logRotator(artifactDaystoKeepStr: '10', artifactNumtoKeepStr: '10', daystoKeepStr:'', nuymtoKeepStr: '')
 
  ),
- disableConurrentBuilds()
+ // disableConurrentBuilds()
 ])
 
 // String cron_string == BRANCH_NAME == "master" ? "* * * * *":""
