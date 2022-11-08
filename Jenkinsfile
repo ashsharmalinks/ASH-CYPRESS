@@ -28,7 +28,7 @@ pipeline{
   stage('execute test against the envronment') {
    agent {
     Dockerfile {
-     filename 'Dockerfile'
+     filename 'dockerfile'
      echo 'install Docker file'
     }
    }
@@ -37,7 +37,7 @@ pipeline{
      // bat 'npm cypress install'
      // git url 'https://github.com/ashsharmalinks/ASH-CYPRESS.git'
      // bat 'docker run -it --entrypoint=cypress/included:10.10.0 info'
-     bat 'docker build -t cypress .'
+     // bat 'docker build -t cypress .'
      // bat'npm update'
      // bat 'npm run triggerAllTestshealess'
     }
